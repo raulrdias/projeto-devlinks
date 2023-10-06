@@ -43,41 +43,60 @@ body * {
 
 /* profile */
 #profile {
-    text-align: center;
-    padding: 24px;
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
 }
+
+#profile div {
+    width: 150px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
+
 
 #profile img {
     width: 112px;
     border-radius: 50%;
-    animation: pulse 6s infinite; /* Cria uma animação de pulsação infinita com duração de 6 segundos */
+    animation: pulse 6s infinite;
+    /* Cria uma animação de pulsação infinita com duração de 6 segundos */
 }
 
 @keyframes pulse {
     0% {
         box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
     }
+
     25% {
         box-shadow: 0 0 25px rgba(0, 255, 0, 0.9);
     }
+
     50% {
         box-shadow: 0 0 25px rgba(0, 0, 255, 0.9);
     }
+
     75% {
         box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
     }
+
     100% {
         box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
     }
 }
 
 
-
-
-#profile p {
+#name {
     font-weight: 500;
     line-height: 24px;
     margin-top: 8px;
+    text-align: center;
+    padding: 10px;
 }
 
 /* switch */
@@ -168,6 +187,15 @@ ul li a:hover {
     padding: 14px 0;
 
     font-size: 24px;
+    opacity: 0;
+    /* Começa com opacidade zero para escondê-los inicialmente */
+    animation-fill-mode: forwards;
+    /* Mantém o estado final da animação */
+    animation: fromBottom 0.7s forwards, fadeIn 0.7s forwards;
+    /* Combina as animações */
+    animation-delay: 1.5s;
+    /* Sem atraso para o primeiro elemento */
+
 }
 
 #social-links a {
@@ -178,36 +206,57 @@ ul li a:hover {
 
     transition: background 0.2s;
     border-radius: 50%;
+
 }
 
 #social-links a:hover {
     background: var(--highlight-color);
 }
 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
 
-#carousel-container {
-    width: 100%;
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* logos */
+.logos {
     overflow: hidden;
+    padding: 10px 0;
     white-space: nowrap;
+    position: relative;
 }
 
-#carousel {
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
     display: inline-block;
-    animation: scroll 10s linear infinite; /* Aumentei o tempo de animação para 20 segundos */
+    animation: 10s slide infinite linear;
 }
 
-#carousel img {
-    margin-right: 20px; /* Espaço entre as imagens */
-    width: 40px; /* Defina a largura desejada para as imagens */
-    height: auto; /* Mantenha a proporção da altura */
+.logos-slide img {
+    height: 40px;
+    margin: 0 20px;
 }
+
+
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%); /* Começa fora da tela à direita */
+        transform: translateX(100%);
+        /* Começa fora da tela à direita */
     }
+
     100% {
-        transform: translateX(-100%); /* Move completamente para a esquerda */
+        transform: translateX(-100%);
+        /* Move completamente para a esquerda */
     }
 }
 
@@ -218,6 +267,77 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* animation*/
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+
+body p {
+    animation: fromTop .7s backwards;
+}
+
+main ul li {
+    opacity: 0;
+    /* Começa com opacidade zero para escondê-los inicialmente */
+    animation-fill-mode: forwards;
+    /* Mantém o estado final da animação */
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main ul li:nth-child(1) {
+    animation: fromBottom 0.7s forwards, fadeIn 0.7s forwards;
+    /* Combina as animações */
+    animation-delay: 0.3s;
+    /* Sem atraso para o primeiro elemento */
+}
+
+main ul li:nth-child(2) {
+    animation: fromBottom 0.7s forwards, fadeIn 0.7s forwards;
+    /* Combina as animações */
+    animation-delay: 0.6s;
+    /* Atraso de 0.3s para o segundo elemento */
+}
+
+main ul li:nth-child(3) {
+    animation: fromBottom 0.7s forwards, fadeIn 0.7s forwards;
+    /* Combina as animações */
+    animation-delay: 0.9s;
+    /* Atraso de 0.6s para o terceiro elemento */
+}
+
+main ul li:nth-child(4) {
+    animation: fromBottom 0.7s forwards, fadeIn 0.7s forwards;
+    /* Combina as animações */
+    animation-delay: 1.2s;
+    /* Atraso de 0.6s para o terceiro elemento */
+}
+
+
+
 
 
 
