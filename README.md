@@ -1,16 +1,11 @@
-<h1 align="center"> DevLinks </h1>
+# 🌟 Agregador de Links - Cartão de Visitas Online
+
+Este é um projeto de Agregador de Links que funciona como um Cartão de Visitas Online pessoal. Ele exibe informações sobre você e seus links importantes em um design simples e elegante.
 
 <p align="center">
 Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
 </p>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
@@ -22,7 +17,7 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
   <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🛠️ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -31,22 +26,52 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 - Figma
 
+
+## 🚀 Como Usar
+
+1. Faça um fork deste repositório ou clone-o para o seu ambiente de desenvolvimento.
+2. Personalize o arquivo `index.html` com suas próprias informações e links.
+3. Adicione ou remova links da lista de links conforme necessário.
+4. Personalize o arquivo `style.css` para ajustar o estilo do seu cartão de visitas.
+5. Você pode adicionar ou remover ícones de redes sociais na seção de links sociais.
+6. Adicione imagens ao diretório `assets` e atualize os caminhos das imagens no arquivo `index.html` conforme necessário.
+7. Personalize o footer com seus próprios detalhes de direitos autorais.
+
+## ⚙️ Pré-requisitos
+
+- Navegador Web moderno
+
+## 🔥 Detalhes do Projeto
+- Efeito avatar
+
+<img src=".github/animation.gif" alt="GIF Animado" width="200">
+
+
+- Dark Mode
+
+<img src=".github/darkmode.gif" alt="GIF Animado" width="200">
+
+
+
+- Ferramentas
+
+<img src=".github/ferramentas.gif" alt="GIF Animado" width="500">
+
+
+
+
+
 ## 💻 Projeto
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online](https://raulrdias.github.io/projeto-devlinks/)
 
-- [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-## :memo: Licença
+## 📝 Licença
 
 Esse projeto está sob a licença MIT.
 
----
+<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a> by Rocketseat
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+---
+Feito com ♥ 
